@@ -1,0 +1,35 @@
+{
+  "name": "FL_test_1_non_over_lw_epoch20_3class",
+  "n_gpu": 1,
+
+  "arch": {
+    "type": "AttnSleep",
+    "args": {
+    }
+  },
+  "data_loader": {
+    "args": {
+      "batch_size": 4,
+      "num_folds": 1
+    }
+  },
+  "optimizer": {
+    "type": "Adam",
+    "args": {
+      "lr": 0.001,
+      "weight_decay": 0.001,
+      "amsgrad": true
+    }
+  },
+  "loss": "weighted_CrossEntropyLoss",
+  "metrics": [
+    "accuracy"
+  ],
+  "trainer": {
+    "epochs": 20,
+    "save_dir": "saved/",
+    "save_period": 30,
+    "verbosity": 2,
+    "monitor": "max val_accuracy"
+  }
+}
