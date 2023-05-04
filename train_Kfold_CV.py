@@ -187,14 +187,14 @@ if __name__ == '__main__':
 #    else:
 #        folds_data = load_folds_data(args2.np_data_dir, config["data_loader"]["args"]["num_folds"])
 
-    training_files = '/3_class/subject_1/X_train.npy'
-    train_label = '/3_class/subject_1/y_train.npy'
+    training_files = '3_class/subject_1/X_train.npy'
+    train_label = '3_class/subject_1/y_train.npy'
     
-    validation_files = '/3_class/subject_1/X_test.npy'
-    val_label = '/3_class/subject_1/y_test.npy'
+    validation_files = '3_class/subject_1/X_test.npy'
+    val_label = '3_class/subject_1/y_test.npy'
 
-    test_files = '/3_class/subject_1/X_train.npy'
-    test_label = '/3_class/subject_1/y_train.npy'
+    test_files = '3_class/subject_1/X_train.npy'
+    test_label = '3_class/subject_1/y_train.npy'
 
     #training_files = 'C:/Users/KimTS/Desktop/GSR_attention_based/wesad/overlap_5_120(30)/total/x_total.npy'
     #train_label = 'C:/Users/KimTS/Desktop/GSR_attention_based/wesad/overlap_5_120(30)/total/total_label.npy'
